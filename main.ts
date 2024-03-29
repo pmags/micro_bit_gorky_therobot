@@ -27,6 +27,10 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
             . . # . .
             . . . . .
             `)
+        pins.digitalWritePin(DigitalPin.P13, 1)
+        pins.digitalWritePin(DigitalPin.P15, 1)
+        pins.analogWritePin(AnalogPin.P14, 1000)
+        pins.analogWritePin(AnalogPin.P16, 1000)
     } else if (receivedString == "right") {
         basic.showLeds(`
             . . # . .
@@ -35,6 +39,10 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
             . . # # .
             . . # . .
             `)
+        pins.digitalWritePin(DigitalPin.P13, 0)
+        pins.digitalWritePin(DigitalPin.P15, 0)
+        pins.analogWritePin(AnalogPin.P14, 900)
+        pins.analogWritePin(AnalogPin.P16, 300)
     } else if (receivedString == "left") {
         basic.showLeds(`
             . . # . .
@@ -43,6 +51,10 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
             . # # . .
             . . # . .
             `)
+        pins.digitalWritePin(DigitalPin.P13, 0)
+        pins.digitalWritePin(DigitalPin.P15, 0)
+        pins.analogWritePin(AnalogPin.P14, 300)
+        pins.analogWritePin(AnalogPin.P16, 900)
     } else {
         pins.digitalWritePin(DigitalPin.P13, 0)
         pins.digitalWritePin(DigitalPin.P15, 0)
