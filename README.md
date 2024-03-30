@@ -22,3 +22,8 @@ To edit this repository in MakeCode.
 
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+
+## Inspiration
+https://cardboard.lofirobot.com/microbit-control-app-info/
+https://hausofpayne.weebly.com/microbitbus.html
